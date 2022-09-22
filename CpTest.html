@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <link href="CpTest.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <script src="https://widget.cloudpayments.ru/bundles/cloudpayments.js"></script> 
+        <script src="CpTest.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="Headr">Благотворительный фонд</div>
+        </header>
+        <main>
+            <form>
+               <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <label for="SurName""></label>
+                            <input type="text" id="SurName" placeholder="Фамилия">
+                        </div>
+                        <div class="col">
+                            <label for="Name"></label>
+                            <input type="text" id="Name" placeholder="Имя">
+                        </div>
+                        <div class="col">
+                            <label for="MiddleName"></label>
+                            <input type="text" id="MiddleName" placeholder="Отчество">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <label for="PhoneNum" class="LabData">Номер телефона</label>
+                            <input type="text" id="PhoneNum" placeholder="+7(777)-777-77-77">
+                        </div>
+                        <div class="col">
+                            <label for="email" class="LabData">Email</label>
+                            <input type="text" id="email" placeholder="ivan.Ivan@mail.ru">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <label for="PaySum" class="LabData">Сумма платежа</label>
+                            <input type="text" id="PaySum" placeholder="1000">
+                        </div>  
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <label for="goal" class="LabData">Назначение платежа</label>
+                            <input type="text" id="goal" placeholder="На уставную деятельность">
+                        </div>
+                    </div>
+                </div>
+            </form>
+                <div class="container">
+                    <div class="row">
+                        <div class="reccur">
+                            <label for="recurrent">Подписка</label>
+                            <input type="checkbox" id="recurrent">
+                        </div>
+                    </div>
+                </div>
+            <button id="button" onclick="pay();";">Оплатить</button>
+            
+        
+        </main>
+    </body>
+</html>
